@@ -1,4 +1,5 @@
 ### log in the servers without passwords
+>28.01,2021, @GFZ, Potsdam
 
 #####     ---this is a notes of setting private and public keys of log in the servers
 **logging in the servers with ssh without inputing your passwords**
