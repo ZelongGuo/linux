@@ -1,6 +1,5 @@
 ## This is a note about the basic git operations.
 >*28.01.2021*, *Zelong Guo*, *@GFZ, Potsdam*
-
 >* fast index
 >>	* (1). git basic operations
 >>	* (2). 'diff' and 'git diff'
