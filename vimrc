@@ -55,6 +55,7 @@ map <right> :vertical resize+5<CR>
 
 " some VI/VIM settings
 set nocompatible
+set backspace=indent,eol,start
 "set mouse=a
 "set list
 let laststatus=2
@@ -85,17 +86,19 @@ call plug#end()
 "======
 " markdown noremap under insert mode
 "======
-autocmd Filetype markdown inoremap ,f <Esc>/<++><CR>:nohlsearch<CR>c4l
+autocmd Filetype markdown inoremap <buffer> ,f <Esc>/<++><CR>:nohlsearch<CR>c4l
 " Bold text
-autocmd Filetype markdown inoremap ,b ****<++><left><left><left><left><left><left>
+autocmd Filetype markdown inoremap <buffer> ,b ****<++><left><left><left><left><left><left>
 " Italic text
-autocmd Filetype markdown inoremap ,i **<++><left><left><left><left><left>
+autocmd Filetype markdown inoremap <buffer> ,i **<++><left><left><left><left><left>
 " deleted text
-autocmd Filetype markdown inoremap ,d ~~~~<++><left><left><left><left><left><left>
+autocmd Filetype markdown inoremap <buffer> ,d ~~~~<++><left><left><left><left><left><left>
 " link
-autocmd Filetype markdown inoremap ,a [](<++>)<++><Esc>F[a
+autocmd Filetype markdown inoremap <buffer> ,a [](<++>)<++><Esc>F[a
 " pictures
-autocmd Filetype markdown inoremap ,p ![](<++>)<++><Esc>F[a
+autocmd Filetype markdown inoremap <buffer> ,p ![](<++>)<++><Esc>F[a
+" enter to next line
+"autocmd Filetype markdown inoremap ,p ![](<++>)<++><Esc>F[a
 
 "======
 " vim-table-mode
