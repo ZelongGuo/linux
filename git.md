@@ -2,6 +2,7 @@
 >*28.01.2021*, *Zelong Guo*, *@GFZ, Potsdam*
 >* fast index
 >>	* (1). git basic operations
+>>	* (2). git grep
 
 ### (1). git basic operations
 ![Git Diagram](img/git_diagram.png)
@@ -81,4 +82,15 @@ git push --set-upstream origin master
 git pull
 
 # end here
+```
+
+### (2). git grep  
+**--- grep the specific function or string**  (note: these are only the very simple examples)
+
+```bash
+# about the 'git grep' (find any file that contains 'snaphu' under the repository), 
+# '-n' means display the line number
+git grep -n snaphu
+# only display the file name
+git grep --name-only snaphu
 ```
