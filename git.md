@@ -2,7 +2,6 @@
 >*28.01.2021*, *Zelong Guo*, *@GFZ, Potsdam*
 >* fast index
 >>	* (1). git basic operations
->>	* (2). 'diff' and 'git diff'
 
 ### (1). git basic operations
 ![Git Diagram](img/git_diagram.png)
@@ -83,5 +82,3 @@ git pull
 
 # end here
 ```
-
-### (2). 'diff' and 'git diff'
