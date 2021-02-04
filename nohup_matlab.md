@@ -6,10 +6,11 @@
 # note there are some difference when redirecting the stdout and stderr...
 
 # bash:
-nohup -nodesktop -nosplash -r batching_stamps3 >log.txt 2>&1 &
+nohup -nodesktop -nosplash -batch batching_stamps3 >log.txt 2>&1 &
 
 # csh:
-nohup -nodesktop -nosplash -r batching_stamps3 >& log.txt &
+# note 'nohup -nodesktop -nodisplay -r batching_stamps3 >&log.txt &' seems cannot work on the servers
+nohup -nodesktop -nosplash -batch batching_stamps3 >& log.txt &
 
 # you can check the PID with jobs or htop:
 ps
