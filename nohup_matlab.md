@@ -12,6 +12,7 @@ nohup -nodesktop -nosplash -r batching_stamps3 >log.txt 2>&1 &
 nohup -nodesktop -nosplash -r batching_stamps3 >& log.txt &
 
 # you can check the PID with jobs or htop:
+ps
 jobs
 htop
 
